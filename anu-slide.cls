@@ -25,9 +25,9 @@
 \setbeamertemplate{background canvas}{
     \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
     \begin{scope}[x={(current page.north east)},y={(current page.south west)}]
-        \draw[anu-gold,line width=.5pt] (0.1,0) -- (0.1,0.95);
-        \draw[anu-gold,line width=.5pt] (0.9,1) -- (0.9,0.25);
-        \draw[anu-gold,line width=.5pt] (0.72,1) -- (0.72,0.84);
+        \draw[anu-gold,line width=.5pt] (0.08,0) -- (0.08,0.95);
+        \draw[anu-gold,line width=.5pt] (0.95,1) -- (0.95,0.25);
+        \draw[anu-gold,line width=.5pt] (0.84,1) -- (0.84,0.84);
         \fill[black] (0.15,0) rectangle (0.95,0.13);
     \end{scope}
     \end{tikzpicture}
@@ -49,13 +49,13 @@
 
 \setbeamertemplate{footline}{
     \hspace*{.12\paperwidth}
-    \parbox{.3\paperwidth}{\centering \slidelogo}
-    \parbox{.3\paperwidth}{\centering \slidefoot}
-    \parbox{.12\paperwidth}{\centering \insertdate}
-    \hspace{.01\paperwidth}
+    \parbox{.1\paperwidth}{\centering \slidelogo}
+    \parbox{.4\paperwidth}{\centering \slidefoot}
+    \hspace{.22\paperwidth}
     \parbox{.02\paperwidth}{\centering \insertframenumber}
     \vspace*{.06\paperheight}
 }
+
 \ifsimpleslides
     \setbeamertemplate{footline}
     {
@@ -107,7 +107,6 @@
             \hspace*{.12\paperwidth}
             \parbox{.3\paperwidth}{\centering \titlelogo}
             \parbox{.3\paperwidth}{\centering \slidefoot}
-            \parbox{.12\paperwidth}{\centering \insertdate}
             \hspace{.01\paperwidth}
             \parbox{.02\paperwidth}{\centering \insertframenumber}
             \vspace*{.06\paperheight}
