@@ -1,0 +1,112 @@
+\documentclass{anu-slide} % Adapted for ANU branding
+
+% For filler text:
+\usepackage[base]{babel}
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+
+\renewcommand{\titlelogo}{\includegraphics[width=.3\paperwidth,keepaspectratio]{logo/anu.png}}
+\renewcommand{\slidelogo}{\includegraphics[width=.05\paperwidth,keepaspectratio]{logo/anu_ crest_gold.png}}
+% For non-CS ANU logo use the lines below:
+% \renewcommand{\titlelogo}{\includegraphics[width=.3\paperwidth,keepaspectratio]{logo/anu-rev.png}}
+% \renewcommand{\slidelogo}{\includegraphics[width=.3\paperwidth,keepaspectratio]{logo/anu.png}}
+% Ensure correct logo application per ANU guidelines
+
+\title{An ANU \LaTeX\ Slide Template}
+\subtitle{an has this subtitle}
+\author{An ANU person\texorpdfstring{\footnotemark[1]}{}, A Secondary Author\texorpdfstring{\footnotemark[2]}{}}
+\institute{\texorpdfstring{\footnotemark[1]}{}Australian National University, \texorpdfstring{\footnotemark[2]}{}Collaborating Institution}
+\date{Last Compiled: \today}
+\renewcommand{\slidefoot}{\LaTeX\ footnotes are pretty}
+
+\begin{document}
+
+\begin{titleframe}{}
+    \maketitle
+\end{titleframe}
+
+\begin{titleframe}{Text in \LaTeX}
+    Examples of Basic Text Typesetting
+\end{titleframe}
+
+\section{Long Text}
+
+\begin{frame}{This is a Really Long Text of Title Used Here}
+    Some really long text:
+    
+    \bigskip
+    
+    \lipsum[2]
+\end{frame}
+
+\section{List}
+
+\begin{frame}{Itemize List}
+    Some introduction of the list.
+    \begin{itemize}
+        \item Bulleted copy. Keep it short with bite-size chunks of information.
+        \begin{itemize}
+            \item Bulleted copy. Keep it short with bite-size chunks of information.
+        \end{itemize}
+        \item Bulleted copy. Keep it short with bite-size chunks of information.
+        \pause\item Bulleted copy on the second slide. Keep it short with bite-size chunks of information.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Enumerate List}
+    Some introduction of the list.
+    \begin{enumerate}
+        \item Bulleted copy. Keep it short with bite-size chunks of information.
+        \begin{enumerate}
+            \item Bulleted copy. Keep it short with bite-size chunks of information.
+        \end{enumerate}
+        \item Bulleted copy. Keep it short with bite-size chunks of information.
+        \item Bulleted copy. Keep it short with bite-size chunks of information.
+    \end{enumerate}
+\end{frame}
+
+\begin{titleframe}{Features in \LaTeX}
+    Examples of Features Commonly Used in Slides
+\end{titleframe}
+
+\section{Maths}
+
+\begin{frame}{Maths}
+    An example of some very long equations with $\Psi (x,t)$:
+    
+    \begin{align}
+    i\hbar {\frac {\partial }{\partial t}}\Psi (x,t)&=\left[-{\frac {\hbar ^{2}}{2m}}{\frac {\partial ^{2}}{\partial x^{2}}}+V(x,t)\right]\Psi (x,t) \\
+    i\hbar {\frac {d}{dt}}\vert \Psi (t)\rangle &={\hat {H}}\vert \Psi (t)\rangle \\ 
+    |\Psi (t)\rangle &=\sum _{n}A_{n}e^{{-iE_{n}t}/\hbar }|\psi _{E_{n}}\rangle
+    \end{align}
+    
+    Indeed an example of some very long equations with $\Psi (x,t)$.
+\end{frame}
+
+\section{Figure}
+\begin{frame}{Figure}
+    \LaTeX\ can draw figures with the tikz package:
+    \begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+    square/.style={rectangle, draw=black!, very thick, minimum size=5mm},
+    ]
+    \node[square](client){\footnotesize Client};
+    \node[square](r1)[right=of client]{\footnotesize Relay 1};
+    \node[square](r2)[right=of r1]{\footnotesize Relay 2};
+    \node[square](r3)[right=of r2]{\footnotesize Relay 3};
+    \node[square](server)[right=of r3]{\footnotesize Server};
+    \draw[->](client.east)--node[above=1em]{\footnotesize$E_1(E_2(E_3(P)))$}(r1.west);
+    \draw[->](r1.east)--node[above=1em]{\footnotesize$E_2(E_3(P))$}(r2.west);
+    \draw[->](r2.east)--node[above=1em]{\footnotesize$E_3(P)$}(r3.west);
+    \draw[->](r3.east)--node[above=1em]{\footnotesize$P$}(server);
+    \end{tikzpicture}
+    \caption{An Example of a Three-Hop Connection}
+    \label{fig:three-hop}
+    \end{figure}
+\end{frame}
+
+% Remaining frames and content unchanged
+
+\end{document}

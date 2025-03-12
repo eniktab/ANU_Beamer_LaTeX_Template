@@ -1,0 +1,69 @@
+% Font setup - ANU Public Sans (uploaded fonts)
+\usepackage{fontspec}
+
+\setmainfont[
+    Path = ./fonts/,
+    UprightFont = PublicSans-Regular.ttf,
+    BoldFont = PublicSans-Bold.ttf,
+    ItalicFont = PublicSans-Italic.ttf,
+    BoldItalicFont = PublicSans-BoldItalic.ttf
+]{Public Sans}
+
+\setsansfont[
+    Path = ./fonts/,
+    UprightFont = PublicSans-Regular.ttf,
+    BoldFont = PublicSans-Bold.ttf,
+    ItalicFont = PublicSans-Italic.ttf,
+    BoldItalicFont = PublicSans-BoldItalic.ttf,
+    Scale=MatchLowercase
+]{Public Sans}
+
+\setmonofont{TeX Gyre Cursor}[Ligatures=NoCommon]
+
+% ANU Colors
+\definecolor{anu-deep-gold}{cmyk}{0.30,0.50,0.70,0.40}
+\definecolor{anu-black}{cmyk}{0,0,0,1}
+\definecolor{anu-gray}{RGB}{111,114,123} % Neutral dark gray
+\definecolor{anu-gold}{RGB}{207, 185, 145}
+\definecolor{anu-dust}{RGB}{235, 217, 159}
+\definecolor{anu-field}{RGB}{221, 185, 69}
+\definecolor{anu-rush}{RGB}{218, 170, 0}
+\definecolor{anu-aged}{RGB}{142, 111, 62}
+\definecolor{anu-steam}{RGB}{196, 191, 192}
+\definecolor{anu-railway-gray}{RGB}{157, 151, 149}
+\definecolor{anu-cool-gray}{RGB}{111, 114, 123}
+\definecolor{anu-steel}{RGB}{85, 89, 96}
+
+% Customize enumerate/itemize style
+\setbeamerfont*{enumerate item}{series=\bfseries}
+\setbeamerfont*{enumerate subitem}{series=\bfseries}
+\setbeamerfont*{enumerate subsubitem}{series=\bfseries}
+\setbeamercolor*{enumerate item}{fg=anu-black}
+\setbeamercolor*{enumerate subitem}{fg=anu-black}
+\setbeamercolor*{enumerate subsubitem}{fg=anu-black}
+
+\setbeamercolor*{itemize item}{fg=anu-black}
+\setbeamercolor*{itemize subitem}{fg=anu-black}
+\setbeamercolor*{itemize subsubitem}{fg=anu-black}
+\setbeamertemplate{itemize items}[square]
+
+% Customize block style:
+\setbeamercolor{block body}{bg=anu-dust}
+\setbeamercolor{block title}{bg=anu-aged, fg=white}
+\setbeamercolor{block body example}{bg=anu-steam}
+\setbeamercolor{block title example}{bg=anu-steel, fg=white}
+\setbeamercolor{block body alerted}{bg=alerted text.fg!10}
+\setbeamercolor{block title alerted}{bg=alerted text.fg!20}
+
+% Customize figure style:
+\setbeamercolor{caption name}{fg=anu-steel}
+
+% Customize title page style
+\setbeamercolor*{title}{fg=anu-deep-gold}
+\setbeamerfont*{title}{size={\Huge}, series=\bfseries, shape=\itshape}
+\setbeamercolor*{subtitle}{fg=white}
+\setbeamerfont*{subtitle}{size={\small}, series=\bfseries, shape=\itshape}
+\setbeamercolor*{author}{fg=white}
+\setbeamerfont*{author}{size={\small}, series=\bfseries, shape=\normalfont}
+\setbeamercolor*{date}{fg=anu-railway-gray}
+\setbeamerfont*{date}{size={\small}, series=\bfseries, shape=\normalfont}
