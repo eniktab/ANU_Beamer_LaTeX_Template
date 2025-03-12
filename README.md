@@ -2,7 +2,8 @@
 
 ## 📌 Introduction
 This guide explains how to use AI assistance to generate **Beamer slides** using the **ANU LaTeX slide template**. The AI formats content into a structured **LaTeX presentation**, making slide creation efficient and professional.
-
+You can use my modified GPT
+https://chatgpt.com/g/g-67d10b09f3c88191a8a6856b360904f9-slider
 ---
 
 ## 🛠 Prerequisites
