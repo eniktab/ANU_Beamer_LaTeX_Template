@@ -98,7 +98,7 @@
                 \fill[black] (0,0) rectangle (1,1);
                 \draw[anu-gold,line width=.5pt] (0.1,0) -- (0.1,0.95);
                 \draw[anu-gold,line width=.5pt] (0.9,1) -- (0.9,0.25);
-                \draw[anu-gold,line width=.5pt] (0.72,1) -- (0.72,0.84);
+                \draw[anu-gold,line width=.5pt] (0.79,1) -- (0.79,0.84);
             \end{scope}
             \end{tikzpicture}
         }
@@ -107,7 +107,7 @@
             \hspace*{.12\paperwidth}
             \parbox{.3\paperwidth}{\centering \titlelogo}
             \parbox{.3\paperwidth}{\centering \slidefoot}
-            \hspace{.01\paperwidth}
+            \hspace{.075\paperwidth}
             \parbox{.02\paperwidth}{\centering \insertframenumber}
             \vspace*{.06\paperheight}
         }
