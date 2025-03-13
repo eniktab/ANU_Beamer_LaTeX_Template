@@ -28,7 +28,7 @@
         \draw[anu-gold,line width=.5pt] (0.08,0) -- (0.08,0.95);
         \draw[anu-gold,line width=.5pt] (0.95,1) -- (0.95,0.25);
         \draw[anu-gold,line width=.5pt] (0.84,1) -- (0.84,0.84);
-        \fill[black] (0.15,0) rectangle (0.95,0.13);
+        \fill[black] (0.15,0) rectangle (0.95,0.169);
     \end{scope}
     \end{tikzpicture}
 }
